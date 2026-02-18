@@ -116,13 +116,13 @@
         }
 
         .skill-item, .lang-item, .hobby-item {
-            display: inline-flex; // Важно: элементы в одну строку
-            align-items: center;  // Центрируем по вертикали
-            gap: 0; // Уберем gap, будем использовать margin для точного контроля
+            display: inline-flex;
+            align-items: center;  
+            gap: 0; 
             
             font-size: 0.85rem;
             font-weight: 500;
-            padding: 10px 12px 10px 14px; // Паддинги: слева побольше, справа поменьше (там бейдж)
+            padding: 10px 12px 10px 14px; 
             
             background: rgba(255,255,255,0.03);
             border: 1px solid $card-border;
