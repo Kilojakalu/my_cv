@@ -1,140 +1,140 @@
 .accordion {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    @media screen and (max-width: 980px) {
-    }
+    gap: 16px;
 
     .accordion-item {
-        display: flex;
-        padding: 18px;
-        flex-direction: column;
-        align-items: flex-start;
+        background: $card-bg;
+        border: 1px solid $card-border;
         border-radius: 16px;
-        border: 1px solid #fff;
-        background: rgba(186, 186, 190, 0.88);
+        overflow: hidden; // Важно! Обрезает все, что вылезает за границы
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         backdrop-filter: blur(10px);
-        transition: 0.5s ease;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: lighten($card-bg, 3%);
+        }
 
         &.open {
-            background: rgba(186, 186, 190, 0.88);
-            .accordion-item-description-wrapper {
-                grid-template-rows: 1fr;
+            background: rgba(30, 41, 59, 0.95);
+            border-color: $primary-accent;
+            box-shadow: 0 0 0 1px $primary-accent, 0 10px 25px -5px rgba(56, 189, 248, 0.2);
 
-                hr {
-                    visibility: visible;
-                    margin: 20px 0px;
-                }
-
-                .accordion-item-header-icon {
-                    transform: rotate(-180deg);
-                }
-            }
             .accordion-item-header {
-                .steps-select__image {
-                    border: 1px solid $Primary-900;
-                    background: transparent;
-                    backdrop-filter: none;
-
-                    .steps-select__image-inner {
-                        background: rgba(158, 123, 80, 0.24);
-                        border-radius: 34.667px;
-                        img {
-                            filter: brightness(0) saturate(100%) invert(49%) sepia(14%) saturate(1460%)
-                                hue-rotate(355deg) brightness(95%) contrast(85%);
-                        }
+                .h3 { 
+                    color: $primary-accent; 
+                    i {
+                        background: $primary-accent;
+                        color: $bg-dark;
+                        border-color: $primary-accent;
+                        font-weight: 700;
                     }
                 }
-                .body_4 {
-                    font-weight: 500;
-                    color: rgba(158, 123, 80, 0.8);
+                &-icon {
+                    transform: rotate(180deg);
+                    color: $primary-accent;
                 }
-                .h6 {
-                    color: $Primary-900;
-                }
-
-                .accordion-item-header-icon {
-                    transition: all 0.2s ease;
-                }
+            }
+            
+            .accordion-item-description-wrapper {
+                grid-template-rows: 1fr;
             }
         }
 
-        .accordion-item-header {
+        &-header {
+            padding: 18px 24px;
+            cursor: pointer;
             display: flex;
-            gap: 16px;
             align-items: center;
             justify-content: space-between;
-            cursor: pointer;
-            width: 100%;
+            gap: 20px; // Увеличил общий отступ
 
-            .steps-select__image {
-                width: 52px;
-                height: 52px;
-                border-radius: 34.667px;
-                border: 1px solid $White-100;
+            .h3 {
+                flex-grow: 1;
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                background: rgba(242, 242, 242, 0.12);
-                backdrop-filter: blur(3px);
-                .steps-select__image-inner {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 40px;
-                    height: 40px;
-                    transition: 0.5s ease;
+                justify-content: space-between;
+                
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: $text-main;
+                transition: color 0.3s;
+                margin: 0; 
+                width: 100%; // Растягиваем на всю ширину
+                
+                // Стиль для опыта (цифра лет)
+                i {
+                    font-style: normal;
+                    font-size: 0.8rem;
+                    color: $text-muted;
+                    background: rgba(255,255,255,0.05);
+                    padding: 6px 12px;
+                    border-radius: 50px;
+                    border: 1px solid rgba(255,255,255,0.1);
+                    transition: all 0.3s ease;
+                    white-space: nowrap;
+                    margin-left: auto; // Отталкивает плашку вправо
+                    margin-right: 15px; // Отступ от плашки до стрелочки
                 }
             }
-            .body_4 {
-                font-weight: 500;
-                color: rgba(242, 242, 242, 0.8);
-                transition: 0.5s ease;
-            }
-            .h6 {
-                color: $White-100;
-                transition: 0.5s ease;
-            }
 
-            .accordion-item-header-icon {
-                transition: all 0.2s ease;
+            &-icon {
+                color: $text-muted;
+                transition: transform 0.3s, color 0.3s;
+                flex-shrink: 0; // Запрещаем сжиматься
             }
         }
 
-        .accordion-item-description-wrapper {
+        // --- ФИКС ГЛЮКА ПРИ ЗАКРЫТИИ ---
+        &-description-wrapper {
             display: grid;
-            width: 100%;
             grid-template-rows: 0fr;
-            overflow: hidden;
-            transition: all 0.2s ease;
+            transition: grid-template-rows 0.4s ease-out;
+            overflow: hidden; // Скрывает контент, пока высота 0
+        }
 
+        &-description {
+            min-height: 0;
+            padding: 0 24px 24px 24px;
+            overflow: hidden; // Дополнительная страховка
+            
             hr {
-                border: none;
-                border-top: 1px solid #5e5e5e;
-                visibility: visible;
+                border: 0;
+                height: 1px;
+                background: linear-gradient(90deg, $card-border, transparent);
+                margin: 0 0 20px 0;
             }
 
-            .accordion-item-description {
-                min-height: 0;
+            h4 {
+                color: $secondary-accent;
+                margin-bottom: 12px;
+                font-size: 0.95rem;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
 
-                .body_2 {
-                    color: $Secondary-800;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                
+                li {
+                    color: $text-muted;
+                    font-size: 0.95rem;
+                    padding-left: 0;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                    
+                    &::before {
+                        content: '•';
+                        color: $primary-accent;
+                        font-size: 1.2em;
+                        line-height: 1;
+                    }
                 }
             }
-        }
-    }
-    .accordion-container:not(:first-child) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &::before {
-            content: "";
-            display: block;
-            width: 1px;
-            height: 16px;
-            background-color: rgba(242, 242, 242, 0.8);
-            margin: 4px 0px 4px 0px;
         }
     }
 }
