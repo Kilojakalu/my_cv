@@ -114,13 +114,13 @@ In addition to backend development, I have frontend skills — creating responsi
             level: 'B1',
         },
         {
-            name: 'Ukrainian',
-            level: 'С2',
-        },
-        {
             name: 'Russian',
             level: 'С2',
         },
+        {
+            name: 'Lithuanian',
+            level: 'A1',
+        }
     ],
     interests: [
         'Football',
