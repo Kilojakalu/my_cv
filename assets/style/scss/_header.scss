@@ -1,42 +1,67 @@
 .header {
-    box-shadow: 0 0.25rem 1rem hsla(240, 100%, 1%, 0.1);
-    background: rgba(0, 0, 0, 0.75);
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 15;
-    height: 85px;
+    height: 70px;
+    z-index: 100;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid $card-border;
+    transition: all 0.3s ease;
+
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
     }
-    &_name-title{
-        color: $White-100;
+
+    &_name-title {
+        font-size: 1.5rem;
+        background: linear-gradient(90deg, $primary-accent, $secondary-accent);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        letter-spacing: -0.02em;
     }
-    &_position{
+
+    &_position {
         display: flex;
         align-items: center;
-        gap: 10px;
-    }
-    &_position-title{
-        color: #2196f3;
-        @media screen and (max-width: 980px) {
-            text-align: end;
+        gap: 15px;
+
+        &-title {
+            font-size: 0.9rem;
+            color: $text-muted;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
             
+            @media screen and (max-width: 768px) {
+                display: none; // Скрываем на мобильных для чистоты
+            }
         }
-    }
-    &_position-button{
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        @media screen and (max-width: 980px) {
-            display: none;
-            
-        }
-        img{
-            width: 24px;
-            height: 24px;
+
+        &-button {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid $card-border;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            img {
+                width: 20px;
+                filter: invert(1); // Делаем иконку белой
+            }
+
+            &:hover {
+                background: $primary-accent;
+                border-color: $primary-accent;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+            }
         }
     }
 }
