@@ -11,95 +11,79 @@ In addition to backend development, I have frontend skills — creating responsi
 
     ],
     phone: [
-        '+380685359128',
+        '+37069758932',
     ],
     skills: [
         {
             name: 'HTML',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'CSS',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'javaScript',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'SASS/LESS/SCSS',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'Photoshop (Ps)',
-            experience: 5,
+            experience: 7,
         },
         {
             name: 'Figma',
-            experience: 5,
-        },
-        {
-            name: 'Laravel',
-            experience: 1,
+            experience: 2,
         },
         {
             name: 'Git',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'Wordpress',
-            experience: 5,
-        },
-        {
-            name: 'Jquery',
-            experience: 3,
+            experience: 2,
         },
         {
             name: 'Bootstrap 4/5',
-            experience: 3,
+            experience: 1,
         },
         {
             name: 'PHP',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'ACF',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'WPML',
-            experience: 5,
+            experience: 1,
         },
         {
             name: 'WooCommerce',
-            experience: 5,
+            experience: 1,
         },
         {
             name: 'MySQL',
-            experience: 5,
+            experience: 2,
         },
         {
             name: 'Elementor',
-            experience: 5,
+            experience: 1,
         },
         {
             name: 'JSON',
-            experience: 3,
-        },
-        {
-            name: 'Docker',
-            experience: 1,
+            experience: 2,
         },
     ],
     socials: [
         {
             iconClass: 'fab fa-linkedin',
-            href: 'https://www.linkedin.com/in/dmitriy-kadeniuk-366284243/',
+            href: 'https://www.linkedin.com/in/raman-alsheuski-37a091373/',
         },
-        {
-            iconClass: 'fab fa-facebook',
-            href: 'https://www.facebook.com/profile.php?id=100084065657396',
-        }
     ],
     position: [
         'PHP developer',
@@ -108,28 +92,17 @@ In addition to backend development, I have frontend skills — creating responsi
     education: {
         basic: [
             {
-                name: `Kharkiv State Polytechnic College`,
-                specialization: `Installation, maintenance, and repair of automated motion control systems in railway transportation`,
-                qualification: `Electrician`,
-                period: ['2016', '2020']
+                name: `Belarusian National Technical University`,
+                specialization: `Information systems and technology software`,
+                qualification: `Programm engineer`,
+                period: ['2019', '2024']
             },
-            {
-                name: `Ukrainian State University of Railway Transport`,
-                specialization: `Information-Control Systems and Technologies`,
-                qualification: `Engineer`,
-                period: ['2020', '2023']
-            },
-            {
-                name: `Ukrainian State University of Railway Transport`,
-                specialization: `Automation, computer-integrated technologies and robotics`,
-                qualification: `IT specialist`,
-                period: ['2023', '2025']
-            },
+            
         ],
         additional: [
             {
                 name: `Solo learn courses`,
-                period: ['2020', '2021'],
+                period: ['2023', '2024'],
                 certification: 'Solo learn',
             },
 
