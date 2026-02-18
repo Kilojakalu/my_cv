@@ -232,6 +232,11 @@ In addition to backend development, I have frontend skills — creating responsi
             imageWork: 'assets/img/cbc.jpg',
             linkWork: 'https://cyprusbusinessclub.com/',
         },
+        {
+            nameWork: 'kikaLab',
+            imageWork: 'assets/img/outsoft.jpg',
+            linkWork: 'https://kika-lab.com/',
+        },
     ],
 
 

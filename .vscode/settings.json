@@ -1,0 +1,19 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".min.css",
+        "savePath": "/assets/style/css"
+      }
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": ["last 2 versions"],
+    "liveSassCompile.settings.showOutputWindowOn": "Error",
+    "liveSassCompile.settings.excludeList": [
+        "/.vscode"
+    ],
+    "watcher": {
+    "files": "resources/**/*.css",
+    "autoUpload": true
+  }
+  }
