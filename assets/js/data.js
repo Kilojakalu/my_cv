@@ -96,7 +96,7 @@ In addition to backend development, I have frontend skills — creating responsi
                 qualification: `Programm engineer`,
                 period: ['2019', '2024']
             },
-            
+
         ],
         additional: [
             {
@@ -190,7 +190,7 @@ In addition to backend development, I have frontend skills — creating responsi
         - Using MVC architecture to separate application logic from presentation layer.<br>
         `,
         },
-        
+
         {
             period: ['02.2024', '01.2025'],
             workNow: false,
@@ -222,7 +222,16 @@ In addition to backend development, I have frontend skills — creating responsi
         },
     ],
     work: [
-        
+        {
+            nameWork: 'Clinic in Dubai',
+            imageWork: 'assets/img/clinica.jpg',
+            linkWork: 'https://turri-vive.com/',
+        },
+        {
+            nameWork: 'Cyprus Business Club',
+            imageWork: 'assets/img/cbc.jpg',
+            linkWork: 'https://cyprusbusinessclub.com/',
+        },
     ],
 
 
