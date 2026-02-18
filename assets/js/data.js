@@ -3,9 +3,8 @@ const data = {
     age: '24',
     gender: 'male',
     about: [
-        `Hi! My name is Dmytro, and I’m a PHP developer with a strong focus on WordPress and Laravel.<br>
-I have 5 years of commercial experience working with WordPress — building, optimizing, and enhancing websites of any complexity.<br>
-I also have 1 year of commercial experience with Laravel, developing flexible and scalable backend solutions.<br>
+        `Hi! My name is Roman, and I’m a PHP developer with a strong focus on WordPress.<br>
+I have 2 years of commercial experience working with WordPress — building, optimizing, and enhancing websites of any complexity.<br>
 <br>
 In addition to backend development, I have frontend skills — creating responsive interfaces, integrating animations, and improving user experience (UX).`,
 
@@ -123,20 +122,20 @@ In addition to backend development, I have frontend skills — creating responsi
         }
     ],
     interests: [
-        'Football',
         'Developer trends',
-        'Sport',
         'Programming',
+        '3Dmodeling and printing',
         'Electronics',
+        'Football',
         'Voleyball',
     ],
     messengers: [
         {
-            href: 'https://t.me/Amoterassu',
+            href: 'https://t.me/Asi_Koju',
             iconClass: 'fab fa-telegram',
         },
         {
-            href: `https://www.linkedin.com/in/dmitriy-kadeniuk-366284243/`,
+            href: `https://www.linkedin.com/in/raman-alsheuski-37a091373/`,
             iconClass: 'fab fa-linkedin',
         },
     ],
@@ -251,46 +250,7 @@ In addition to backend development, I have frontend skills — creating responsi
         },
     ],
     work: [
-        {
-            nameWork: 'Nutrion by Tanya',
-            imageWork: 'assets/img/nutrion.jpg',
-            linkWork: 'https://nutritionbytanya.com/',
-        },
-        {
-            nameWork: 'Clinic in Dubai',
-            imageWork: 'assets/img/clinica.jpg',
-            linkWork: 'https://turri-vive.com/',
-        },
-        {
-            nameWork: 'Cyprus Business Club',
-            imageWork: 'assets/img/cbc.jpg',
-            linkWork: 'https://cyprusbusinessclub.com/',
-        },
-        {
-            nameWork: 'Trading bot',
-            imageWork: 'assets/img/tr-bot.jpg',
-            linkWork: 'https://f1nance.ai/',
-        },
-        {
-            nameWork: 'Nibulon',
-            imageWork: 'assets/img/nibulon.jpg',
-            linkWork: 'https://www.nibulon.com/',
-        },
-        {
-            nameWork: 'Nl life',
-            imageWork: 'assets/img/nl_life.jpg',
-            linkWork: 'https://nl.life/',
-        },
-        {
-            nameWork: 'XYZ Business',
-            imageWork: 'assets/img/xyz.jpg',
-            linkWork: 'https://xyzbusiness-services.com/',
-        },
-        {
-            nameWork: 'kikaLab',
-            imageWork: 'assets/img/outsoft.jpg',
-            linkWork: 'https://kika-lab.com/',
-        },
+        
     ],
 
 
