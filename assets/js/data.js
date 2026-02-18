@@ -190,37 +190,9 @@ In addition to backend development, I have frontend skills — creating responsi
         - Using MVC architecture to separate application logic from presentation layer.<br>
         `,
         },
+        
         {
-            period: ['09.2022', '02.2023'],
-            workNow: false,
-            companyName: `Onix Systems`,
-            position: `PHP developer`,
-            description: `
-            <i>Wordpress</i> <br>
-        - Development of landing pages, online stores, and multi-page websites.<br>
-        - Bug fixing and troubleshooting.<br>
-        - WordPress development and customization.<br>
-        - WooCommerce development and customization.<br>
-        - Working with custom WordPress themes.<br>
-        - Creating themes from scratch.<br>
-        - Working with plugins like ACF, Contact Form 7, Polylang, Elementor,WPML.<br>
-        - Creating animations using JS.<br>
-        - Enhancement of plugin functionality.<br>
-        - Working with various WordPress plugins and creating custom solutions for WooCommerce.<br>`,
-        },
-        {
-            period: ['04.2022', '08.2022'],
-            workNow: false,
-            companyName: `DevOut Labs`,
-            position: `PHP developer`,
-            description: `
-            <i>Wordpress</i> <br>
-            -Development of a WordPress website, deploying it on a CMS using ACF Pro, Contact Form 7, and incorporating JS animations.<br>
-        Ability to edit text fields and replace images.<br>
-        Customizable menu that can be modified in the admin panel.<br>`,
-        },
-        {
-            period: ['01.2022', '04.2022'],
+            period: ['02.2024', '01.2025'],
             workNow: false,
             companyName: `Lion Internal`,
             position: `PHP developer`,
@@ -234,7 +206,7 @@ In addition to backend development, I have frontend skills — creating responsi
         - Expertise in WordPress and its plugins, including ACF and Contact Form 7.<br>`,
         },
         {
-            period: ['2021', '2022'],
+            period: ['03.2025', '11.2025'],
             workNow: false,
             companyName: `Freelance on UpWork`,
             position: `Front-end | PHP developer`,
